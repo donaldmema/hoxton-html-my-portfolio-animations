@@ -55,6 +55,8 @@ body {
 
 .proud-dev-icon {
   width: 250px;
+
+  animation: slide-from-left 1.5s 0.5s;
 }
 
 .intro__main {
@@ -190,4 +192,18 @@ body {
 .back-to-top a {
   text-decoration: none;
   color: white;
+}
+
+@keyframes slide-from-left {
+  0% {
+    transform: translateX(-800px);
+  }
+
+  80% {
+    transform: translateX(800px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
